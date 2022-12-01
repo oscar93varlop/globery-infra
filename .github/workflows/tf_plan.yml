@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Ingress to the directory
-      run: cd environments/
+      run: |
+        cd environments/
     - name: Ingress to the directory
       run: cd dev/
     - name: Checkout Repo
