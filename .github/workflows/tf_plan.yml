@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Ingress to the directory
       run: |
-        cd environments/
+        cd /environments
     - name: Ingress to the directory
       run: cd dev/
     - name: Checkout Repo
