@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Ingress to the directory
-     run: cd environments/dev/
+      run: cd environments/dev/
     - name: Checkout Repo
       uses: actions/checkout@v1
     - name: Setup Terraform
