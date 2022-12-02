@@ -36,6 +36,7 @@ jobs:
     - name: Terraform Validate
       id: validate
       run: terraform validate -no-color
+      working-directory: environments/dev/
     # - name: Configure AWS credentials
     #   uses: aws-actions/configure-aws-credentials@v1
     #   with:
@@ -45,5 +46,6 @@ jobs:
     - name: Terraform Plan
       id: plan
       run: terraform plan -no-color
+      working-directory: environments/dev/
       continue-on-error: true
       #
