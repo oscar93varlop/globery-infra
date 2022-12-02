@@ -3,7 +3,7 @@ module "networking" {
     source        = "../../modules/networking"
     env = "${var.env}" 
     project = "globery"
-    cidr_block_dev = "10.1.0.0/16"
+    cidr_block = "10.1.0.0/16"
     cidr_block_sbnt_public_1 = "10.1.1.0/24"
     cidr_block_sbnt_private_1 =  "10.1.3.0/24"
     cidr_block_sbnt_private_2 = "10.1.4.0/24"
