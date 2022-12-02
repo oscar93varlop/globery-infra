@@ -1,7 +1,7 @@
 module "networking" {
     count         = 1   
     source        = "../../modules/networking"
-    env = "dev" 
+    env = "${var.env}" 
     project = "globery"
     cidr_block_dev = "10.1.0.0/16"
     cidr_block_sbnt_public_1 = "10.1.1.0/24"
