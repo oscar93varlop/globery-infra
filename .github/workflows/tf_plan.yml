@@ -7,6 +7,7 @@ on:
 jobs:
   Revisando_Infra:
     runs-on: ubuntu-latest
+    working-directory: ./environments/dev
     steps:
     # - name: Ingress to the directory
     #   run: |
