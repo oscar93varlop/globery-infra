@@ -2,7 +2,7 @@ variable "env" {
 }
 variable "project" {
 }
-variable "cidr_block_dev" {
+variable "cidr_block"{
 }
 variable "cidr_block_sbnt_public_1" {
 }
