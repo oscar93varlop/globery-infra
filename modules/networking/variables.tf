@@ -20,7 +20,7 @@ variable "cidr_block_sbnt_private_1" {
 }
 variable "cidr_block_sbnt_private_2" {
 }
-variable "cidr_block_sbnt_public_2  " {
+variable "cidr_block_sbnt_public_2" {
 }
 variable "cidr_block_sbnt_private_3" {
 }
