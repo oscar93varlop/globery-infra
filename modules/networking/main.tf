@@ -20,7 +20,7 @@ resource "aws_subnet" "sbnt_private_1" {
   cidr_block =  var.cidr_block_sbnt_private_1
 
 }
-resource "aws_subnet" "sbnt_private-2" {
+resource "aws_subnet" "sbnt_private_2" {
   vpc_id     = aws_vpc.vpc_globery.id
   availability_zone = var.az2
   cidr_block = var.cidr_block_sbnt_private_2
@@ -33,7 +33,7 @@ resource "aws_subnet" "sbnt_private_3" {
   cidr_block =  var.cidr_block_sbnt_private_3
 
 }
-resource "aws_subnet" "sbnt_private-3" {
+resource "aws_subnet" "sbnt_private_4" {
   vpc_id     = aws_vpc.vpc_globery.id
   availability_zone = var.az2
   cidr_block = var.cidr_block_sbnt_private_3
