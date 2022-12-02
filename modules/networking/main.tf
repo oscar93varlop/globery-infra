@@ -1,6 +1,8 @@
 resource "aws_vpc" "vpc_globery" {
-  name       = "vpc-${var.env}-${var.project}"
   cidr_block = var.cidr_block
+  tags = {
+    Name = "vpc-${var.env}-${var.project}"
+  }
 }
 resource "aws_subnet" "sbnt_public_1" {
   vpc_id     = aws_vpc.vpc_globery.id
