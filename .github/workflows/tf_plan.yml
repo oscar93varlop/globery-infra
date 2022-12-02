@@ -50,7 +50,7 @@ jobs:
     #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     #     aws-region: us-east-1
     - name: Terraform Lock false
-      id: plan
+      id: force-unlock
       run: terraform force-unlock a4ab11e4-3ec0-d646-6253-278cbf20fc80
       working-directory: environments/dev/
       continue-on-error: false
