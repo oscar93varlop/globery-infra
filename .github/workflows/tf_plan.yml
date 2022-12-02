@@ -35,7 +35,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - name: Terraform Validate
       id: validate
-      run: terraform validate -no-color
+      run: terraform validate -no-color -var-file=dev.tfvars
       working-directory: environments/dev/
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
