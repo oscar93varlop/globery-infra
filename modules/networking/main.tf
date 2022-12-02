@@ -51,7 +51,7 @@ resource "aws_eip" "eip_globery" {
 }
 resource "aws_nat_gateway" "nat-gw-globery" {
   allocation_id = aws_eip.eip_globery.id
-  subnet_id     = aws_subnet.sn_private.id
+  subnet_id     = aws_subnet.sbnt_private_1.id
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
   # on the Internet Gateway for the VPC.
@@ -68,7 +68,7 @@ resource "aws_route_table" "rtb-public" {
 
 }
 resource "aws_route_table_association" "rtb-a-public" {
-  subnet_id      = aws_subnet.sn_public.id
+  subnet_id      = [aws_subnet.sbnt_public_1.id, aws_subnet.sbnt_public_2.id ]
   route_table_id = aws_route_table.rtb-public.id
 }
 
@@ -83,10 +83,10 @@ resource "aws_route_table" "rtb-private" {
 
 }
 resource "aws_route_table_association" "rtb-a-private" {
-  subnet_id      = aws_subnet.sn_private.id
+  subnet_id      = [aws_subnet.sbnt_private_1.id, aws_subnet.sbnt_private_2.id, aws_subnet.sbnt_private_3.id, aws_subnet.sbnt_private_4.id ]
   route_table_id = aws_route_table.rtb-private.id
 }
-resource "aws_route_table_association" "rtb-a-private-2" {
+/* resource "aws_route_table_association" "rtb-a-private-2" {
   subnet_id      = aws_subnet.sn_private-2.id
   route_table_id = aws_route_table.rtb-private.id
-}
+} */
