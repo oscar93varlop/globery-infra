@@ -11,4 +11,5 @@ module "networking" {
     cidr_block_sbnt_private_3 =  "10.1.5.0/24"
     cidr_block_sbnt_private_4 =  "10.1.6.0/24"
     # some_variable = some_value
+    #
 }
