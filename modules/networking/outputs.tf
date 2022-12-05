@@ -1,16 +1,23 @@
-# output "subnet_public" {
-#   value = aws_subnet.sn_public.id
-# }
-# output "subnet_private-1" {
-#   value = aws_subnet.sn_private.id
-# }
-# output "subnet_private-2" {
-#   value = aws_subnet.sn_private-2.id
-# }
+output "subnet_public" {
+  value = aws_subnet.sbnt_public_1
+}
+output "subnet_public" {
+  value = aws_subnet.sbnt_public_2.id
+}
+output "subnet_private_1" {
+  value = aws_subnet.sbnt_private_1.id
+}
+output "subnet_private_2" {
+  value = aws_subnet.sbnt_private_2.id
+}
 
-# output "vpc_id" {
-#   value = aws_vpc.vpc_test.id
-# }
-# output "vpc_cidr" {
-#   value = var.cidr_block
-# }
+output "subnet_private_3" {
+  value = aws_subnet.sbnt_private_3.id
+}
+output "subnet_private_4" {
+  value = aws_subnet.sbnt_private_4.id
+}
+
+output "vpc_id" {
+  value = aws_vpc.vpc_globery.id
+}
