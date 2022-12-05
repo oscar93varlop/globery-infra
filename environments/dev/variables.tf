@@ -16,3 +16,8 @@ variable "cidr_block_sbnt_private_3" {
 }
 variable "cidr_block_sbnt_private_4" {
 }
+
+#-----vars route53.tf----------------
+variable "domain_name" {
+    
+}
