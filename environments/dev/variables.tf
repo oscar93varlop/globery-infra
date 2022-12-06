@@ -21,3 +21,10 @@ variable "cidr_block_sbnt_private_4" {
 variable "domain_name" {
     
 }
+#-----vars security.tf----------------
+variable "name_sg" {
+}
+variable "descrption_sg" {
+}
+variable "vpc_id" {
+}
