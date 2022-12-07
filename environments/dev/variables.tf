@@ -22,9 +22,9 @@ variable "domain_name" {
     
 }
 #-----vars security.tf----------------
-variable "name_sg" {
+variable "name_sg_runner" {
 }
-variable "descrption_sg" {
+variable "description_sg_runner" {
 }
 variable "vpc_id" {
 }
