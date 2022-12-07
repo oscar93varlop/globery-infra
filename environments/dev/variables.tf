@@ -26,5 +26,3 @@ variable "name_sg_runner" {
 }
 variable "description_sg_runner" {
 }
-variable "vpc_id" {
-}

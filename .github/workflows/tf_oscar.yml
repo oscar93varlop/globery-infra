@@ -36,4 +36,4 @@ jobs:
       id: plan
       run: terraform plan -no-color -lock=false -var-file=dev.tfvars
       working-directory: environments/dev/
-      continue-on-error: true
+      continue-on-error: false
