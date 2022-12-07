@@ -11,5 +11,5 @@ cidr_block_sbnt_private_4 =  "10.1.6.0/24"
 #-----vars route53.tf----------------
 domain_name = "globery.dev"
 #-----vars security.tf----------------
-name_sg = "sg-ec2-ruuner-gh-actions" 
-descrption_sg = "sg-ec2-ruuner-gh-actions" 
+name_sg_runner = "sg-ec2-ruuner-gh-actions" 
+descrption_sg_runner = "sg-ec2-ruuner-gh-actions" 
