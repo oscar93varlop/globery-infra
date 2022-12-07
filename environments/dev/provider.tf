@@ -10,8 +10,8 @@ terraform {
 provider "aws" {
     shared_config_files      = ["/home/ovl93/.aws/config"]
     shared_credentials_files = ["/home/ovl93/.aws/credentials"]
-    profile   = "globery-dev"
-    region = "us-east-1"
+#    profile   = "globery-dev"
+#    region = "us-east-1"
     default_tags {
       tags = {
         env = var.env
