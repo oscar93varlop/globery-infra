@@ -13,3 +13,4 @@ domain_name = "globery.dev"
 #-----vars security.tf----------------
 name_sg_runner = "sg-ec2-ruuner-gh-actions" 
 description_sg_runner = "sg-ec2-ruuner-gh-actions" 
+ingress_sg_runner = "test"
