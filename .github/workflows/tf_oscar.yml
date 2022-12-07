@@ -1,4 +1,4 @@
-name: Revisando Infra
+name: Repo Oscar
 on:
   push:
     branches:
